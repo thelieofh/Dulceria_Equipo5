@@ -1,0 +1,4 @@
+Nombre: Erik, Correo: erik@gmail.com, Fecha: 2025-03-18, Contraseña: 1
+Nombre: Erik, Correo: erik@gmail.com, Fecha: 2025-03-18, Contraseña: 1
+Nombre: asdasd, Correo: asdasdbhasd@gmail.com, Fecha: 2025-03-10, Contraseña: 
+Nombre: Frederik, Correo: fede@gmail.com, Fecha: 2025-03-05, Contraseña: 12345
