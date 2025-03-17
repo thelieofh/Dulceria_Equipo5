@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dulce Tentación - Productos</title>
     <link rel="stylesheet" href="/Dulceria_Equipo5/Devops/css/styles.css">
+    <script>
+        function showCategory(category) {
+            document.querySelectorAll('.category').forEach(cat => {
+                cat.style.display = 'none';
+            });
+            document.getElementById(category).style.display = 'block';
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -16,43 +24,227 @@
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="about.html">Sobre Nosotros</a></li>
                 <li><a href="products.html">Productos</a></li>
-                <li><a href="gallery.html">Galería</a></li>
+                <li><a href="gallery.html">Galeria</a></li>
                 <li><a href="contact.html">Contacto</a></li>
-                <li><a href="Usuarios.html">Registro Usuarios</a></li>
+                <li><a href="Usuarios.html">RegistroUsuarios</a></li>
             </ul>
         </nav>
     </header>
 
     <section class="products">
-        <h2>Nuestros Productos</h2>
-        <div class="product-grid">
-            <div class="product">
-                <img src="/Dulceria_Equipo5/Devops/src/Chocolates.jpg" alt="Chocolates Artesanales">
-                <p>Chocolates Artesanales</p>
+        <div style="text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:xx-large;">Nuestros productos</div><br>
+            <div class="category-buttons">
+                <button class="category-btn" onclick="showCategory('chocolates')">Chocolates</button>
+                <button class="category-btn" onclick="showCategory('paletas')">Paletas</button>
+                <button class="category-btn" onclick="showCategory('caramelos')">Dulces de caramelo</button>
+                <button class="category-btn" onclick="showCategory('botanas')">Botanas</button>
+                <button class="category-btn" onclick="showCategory('desechables')">Desechables</button>
             </div>
-            <div class="product">
-                <img src="/Dulceria_Equipo5/Devops/src/Paletas.jpg" alt="Paletas de Sabores Exóticos">
-                <p>Paletas de Sabores Exóticos</p>
+            <div id="chocolates" class="category" style="display:none; text-align: center;">
+                <h3>Chocolates</h3>
+                    <div class="product-grid">
+                        <div class="product">
+                            <img src="/Dulceria_Equipo5/Devops/src/Chocolate 1.png">
+                            <div style="text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Snickers - $18</div>
+                        </div>
+                        <div class="product">
+                            <img src="/Dulceria_Equipo5/Devops/src/Milky_w.png">
+                            <div style="text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Milky way - $17</div>
+                        </div>
+                        <div class="product">
+                            <img src="/Dulceria_Equipo5/Devops/src/Ch_3.png">
+                            <div style="text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Carlos V - $12</div>                         
+                        </div>
+                        <div class="product">
+                            <img src="/Dulceria_Equipo5/Devops/src/Ch_4.png">
+                            <div style="text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Hershey's Cookies & Cream - $22</div>
+                        </div>
+                        <div class="product">
+                            <img src="/Dulceria_Equipo5/Devops/src/Ch_5.png">
+                            <div style="text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Kinder Bueno - $28</div> 
+                        </div>
+                        <div class="product">
+                            <img src="/Dulceria_Equipo5/Devops/src/Ch_6.png">
+                            <div style="text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">M&M's - $25</div> 
+                        </div>
+                        <div class="product">
+                            <img src="/Dulceria_Equipo5/Devops/src/Ch_7.png">
+                            <div style="text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Ferrero Rocher (3 piezas) - $45</div> 
+                        </div>
+                        <div class="product">
+                            <img src="/Dulceria_Equipo5/Devops/src/Ch_8.png">
+                            <div style="text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Crunch - $18</div> 
+                        </div>
+                        <div class="product">
+                            <img src="/Dulceria_Equipo5/Devops/src/Ch_9.png">
+                            <div style="text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Hershey's Almendras - $24</div> 
+                        </div>
+                    </div>
             </div>
-            <div class="product">
-                <img src="/Dulceria_Equipo5/Devops/src/bombones.jpg" alt="Bombones de Crema">
-                <p>Bombones de Crema</p>
+            <div id="paletas" class="category" style="display:none; text-align: center;">
+                <h3>Paletas</h3>
+                    <div class="product-grid">
+                        <div class="product">
+                            <img src="/Dulceria_Equipo5/Devops/src/Pal_1.png">
+                            <div style="text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Payaso - $70</div>
+                        </div>
+                        <div class="product">
+                            <img src="/Dulceria_Equipo5/Devops/src/Pal_2.png">
+                            <div style="text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Rockaleta - $50</div>
+                        </div>
+                        <div class="product">
+                            <img src="/Dulceria_Equipo5/Devops/src/Pal_3.png">
+                            <div style="text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Vero Mango - $60</div>
+                        </div>
+                        <div class="product">
+                            <img src="/Dulceria_Equipo5/Devops/src/Pal_4.png">
+                            <div style="text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Manita de la Suerte - $35</div>
+                        </div>
+                        <div class="product">
+                            <img src="/Dulceria_Equipo5/Devops/src/Pal_5.png">
+                            <div style="text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Paleta de Sandía - $60</div>
+                        </div>
+                        <div class="product">
+                            <img src="/Dulceria_Equipo5/Devops/src/Pal_6.png">
+                            <div style="text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Vero Elote - $50</div>
+                        </div>
+                        <div class="product">
+                            <img src="/Dulceria_Equipo5/Devops/src/Pal_7.png">
+                            <div style="text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Tutsi Pop - $45</div>
+                        </div>
+                        <div class="product">
+                            <img src="/Dulceria_Equipo5/Devops/src/Pal_8.png">
+                            <div style="text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Chupa chups - $50</div>
+                        </div>
+                        <div class="product">
+                            <img src="/Dulceria_Equipo5/Devops/src/Pal_9.png">
+                            <div style="text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Tarrito - $50</div>
+                        </div>
+                    </div>
             </div>
-            <div class="product">
-                <img src="/Dulceria_Equipo5/Devops/src/gomitas.jpg" alt="Gomitas de Frutas">
-                <p>Gomitas de Frutas</p>
+            <div id="caramelos" class="category" style="display:none; text-align: center;">
+                <h3>Dulces de caramelo</h3>
+                    <div class="product-grid">
+                        <div class="product">
+                            <img src="/Dulceria_Equipo5/Devops/src/Dul_1.png">
+                            <div style="text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Skittles - $80</div>
+                        </div>
+                        <div class="product">
+                            <img src="/Dulceria_Equipo5/Devops/src/Dul_2.png">
+                            <div style="text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Pulparindo - $50</div>
+                        </div>
+                        <div class="product">
+                            <img src="/Dulceria_Equipo5/Devops/src/Dul_3.png">
+                            <div style="text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Pelón Pelo Rico - $60</div>
+                        </div>
+                        <div class="product">
+                            <img src="/Dulceria_Equipo5/Devops/src/Dul_4.png">
+                            <div style="text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Rellerindos - $35</div>
+                        </div>
+                        <div class="product">
+                            <img src="/Dulceria_Equipo5/Devops/src/Dul_5.png">
+                            <div style="text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Jolly Rancher - $55</div>
+                        </div>
+                        <div class="product">
+                            <img src="/Dulceria_Equipo5/Devops/src/Dul_6.png">
+                            <div style="text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Sugus - $50</div>
+                        </div>
+                        <div class="product">
+                            <img src="/Dulceria_Equipo5/Devops/src/Dul_7.png">
+                            <div style="text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Mazapán De la Rosa - $45</div>
+                        </div>
+                        <div class="product">
+                            <img src="/Dulceria_Equipo5/Devops/src/Dul_8.png">
+                            <div style="text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Bocadín - $50</div>
+                        </div>
+                        <div class="product">
+                            <img src="/Dulceria_Equipo5/Devops/src/Dul_9.png">
+                            <div style="text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Ricolino Lunetas - $45</div>
+                        </div>                        
+                    </div>
             </div>
-            <div class="product">
-                <img src="/Dulceria_Equipo5/Devops/src/dulces.jpg" alt="Caramelos Clásicos">
-                <p>Caramelos Clásicos</p>
-            </div>
-            <div class="product">
-                <img src="/Dulceria_Equipo5/Devops/src/bombones de dulce.jpg" alt="Malvaviscos de Colores">
-                <p>Malvaviscos de Colores</p>
-            </div>
-        </div>
+            <div id="botanas" class="category" style="display:none; text-align: center;">
+                <h3>Botanas</h3>
+                    <div class="product-grid">
+                        <div class="product">
+                            <img src="/Dulceria_Equipo5/Devops/src/Bot_1.png">
+                            <div style="text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Sabritas Original - $22</div>
+                        </div>
+                        <div class="product">
+                            <img src="/Dulceria_Equipo5/Devops/src/Bot_2.png">
+                            <div style="text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Ruffles Queso - $23</div>
+                        </div>
+                        <div class="product">
+                            <img src="/Dulceria_Equipo5/Devops/src/Bot_3.png">
+                            <div style="text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Ruffles Fuego - $23</div>
+                        </div>
+                        <div class="product">
+                            <img src="/Dulceria_Equipo5/Devops/src/Bot_4.png">
+                            <div style="text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Doritos Nacho - $22</div>
+                        </div>
+                        <div class="product">
+                            <img src="/Dulceria_Equipo5/Devops/src/Bot_5.png">
+                            <div style="text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Doritos Flamin' Hot - $24</div>
+                        </div>
+                        <div class="product">
+                            <img src="/Dulceria_Equipo5/Devops/src/Bot_6.png">
+                            <div style="text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Cheetos Torciditos - $20</div>
+                        </div>
+                        <div class="product">
+                            <img src="/Dulceria_Equipo5/Devops/src/Bot_7.png">
+                            <div style="text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Cheetos Flamin' Hot - $22</div>
+                        </div>
+                        <div class="product">
+                            <img src="/Dulceria_Equipo5/Devops/src/Bot_8.png">
+                            <div style="text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Tostitos Salsa Verde - $24</div>
+                        </div>
+                        <div class="product">
+                            <img src="/Dulceria_Equipo5/Devops/src/Bot_9.png">
+                            <div style="text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Takis Fuego - $22</div>
+                        </div>                        
+                    </div>
+                </div>
+                <div id="desechables" class="category" style="display:none; text-align: center;">
+                    <h3>Desechables</h3>
+                        <div class="product-grid">
+                            <div class="product">
+                                <img src="/Dulceria_Equipo5/Devops/src/Des_1.png">
+                                <div style="text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Vasos Desechables - $30</div>
+                            </div>
+                            <div class="product">
+                                <img src="/Dulceria_Equipo5/Devops/src/Des_2.png">
+                                <div style="text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Platos Desechables - $40</div>
+                            </div>
+                            <div class="product">
+                                <img src="/Dulceria_Equipo5/Devops/src/Des_3.png">
+                                <div style="text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Tenedores Desechables - $35</div>
+                            </div>
+                            <div class="product">
+                                <img src="/Dulceria_Equipo5/Devops/src/Des_4.png">
+                                <div style="text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Cucharas Desechables - $35</div>
+                            </div>
+                            <div class="product">
+                                <img src="/Dulceria_Equipo5/Devops/src/Des_5.png">
+                                <div style="text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Cuchillos Desechables - $35</div>
+                            </div>
+                            <div class="product">
+                                <img src="/Dulceria_Equipo5/Devops/src/Des_6.png">
+                                <div style="text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Servilletas - $25</div>
+                            </div>
+                            <div class="product">
+                                <img src="/Dulceria_Equipo5/Devops/src/Des_7.png">
+                                <div style="text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Popotes Desechables - $20</div>
+                            </div>
+                            <div class="product">
+                                <img src="/Dulceria_Equipo5/Devops/src/Des_8.png">
+                                <div style="text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Charolas Desechables - $50</div>
+                            </div>
+                            <div class="product">
+                                <img src="/Dulceria_Equipo5/Devops/src/Des_9.png">
+                                <div style="text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Bolsas Plásticas - $28</div>
+                            </div>                            
+                        </div>
     </section>
-
     <footer>
         <p>&copy; 2025 Dulce Tentación. Todos los derechos reservados.</p>
     </footer>
