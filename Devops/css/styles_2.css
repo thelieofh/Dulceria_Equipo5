@@ -1,0 +1,149 @@
+/* Reinicio general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para el body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #ffebee;
+    background-image: url('/Dulceria_Equipo5/Devops/src/WhatsApp\ Image\ 2025-03-17\ at\ 8.03.25\ PM.jpeg');
+}
+
+/* Estilos para el header */
+header {
+    position: sticky;
+    top: 0;
+    background-color: #ff8c8c;
+    color: #fff;
+    padding: 10px 0;
+    z-index: 10;
+    width: 100%;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+header .logo img {
+    height: 60px;
+    width: auto;
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li {
+    padding: 5px 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff5e5e;
+}
+
+/* Estilos para la sección hero */
+.hero {
+    background-image: url('/Devops/src/hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ff8c8c;
+    padding: 40px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #ff8c8c;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+footer ul.social-links {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul.social-links li {
+    display: inline;
+    margin-right: 10px;
+}
+
+footer ul.social-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+footer ul.social-links li a:hover {
+    color: #ff5e5e;
+}
+
+/* Estilos para la sección sobre nosotros */
+.about-us {
+    background-color: #FFF0F5;
+    padding: 40px;
+}
+
+.about-us-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-us-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.about-us-text h1 {
+    font-size: 2.5rem;
+    color: #ff8c8c;
+    margin-bottom: 20px;
+}
+
+.about-us-text p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.about-us-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-us-image img {
+    max-width: 20%;
+    height: auto;
+    border-radius: 8px;
+}
