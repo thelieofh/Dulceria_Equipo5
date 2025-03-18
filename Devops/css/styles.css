@@ -15,7 +15,6 @@ header {
     background-color: #ff8c8c;
 }
 
-
 /* Menu */
 nav ul {
     list-style: none;
@@ -153,7 +152,7 @@ footer {
         transform: scale(0.95);
     }
 
-    /* Contacto style */
+    /* Fondo de contacto */
     .contact {
         max-width: 600px;
         margin: 50px auto;
